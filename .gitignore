@@ -1,0 +1,5 @@
+.env
+models/stence-models/ 
+*.pkl
+models/tfidf-models/
+*.pkl
