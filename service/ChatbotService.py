@@ -4,11 +4,17 @@ from sklearn.metrics.pairwise import cosine_similarity
 from textwrap import dedent
 import joblib, pandas as pd
 import google.generativeai as genai
+from dotenv import load_dotenv
+import os
+
 
 from models.ChatbotModels import df_all, vectorizer, tfidf_matrix, embeddings, model
 
-# --- LLM Membuatkan teksnya --- 
-genai.configure(api_key="AIzaSyCCpeCzSfyHf2WHSZ84UdzJUZ1RPqtZPnM")
+# --- LLM Membuatkan teksnya ---
+load_dotenv()
+API_KEY = os.getenv("GEMINI_API_KEY")
+
+genai.configure(api_key=API_KEY)
 model_llm = genai.GenerativeModel("gemini-2.5-flash")
 
 def get_chatbot_response(query: str) :
