@@ -1,5 +1,7 @@
 .env
-models/stence-models/ 
+models/stence_models/ 
 *.pkl
-models/tfidf-models/
+models/tfidf_models/
 *.pkl
+models/tfidf_models/
+*.csv

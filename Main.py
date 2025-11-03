@@ -1,15 +1,15 @@
-from typing import Union
-
 from fastapi import FastAPI
+from routes.ChatbotRoutes import router as chatbot_router
 
-app = FastAPI()
+app = FastAPI(
+    title="Hybrid Chatbot API",
+    description="Chatbot dengan TF-IDF + Semantic Embedding + Gemini",
+    version="1.0.0"
+)
+
+# Daftarkan router
+app.include_router(chatbot_router)
 
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}

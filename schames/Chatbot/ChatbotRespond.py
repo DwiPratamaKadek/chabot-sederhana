@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 
-class ChatbotRequest(BaseModel):
-    id : str
+class ChatbotRespond(BaseModel):
     question : str
     answer : str
 

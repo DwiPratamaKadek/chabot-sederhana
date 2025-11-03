@@ -1,4 +1,4 @@
-# Pengembangan Chatbot Hybrid Berbasis Gabungan TF-IDF dan Semantic Embedding dengan LLM Gemini untuk Pembangkitan Teks
+#   
 
 ## Run Project 
 1. Cara pertama 
@@ -76,3 +76,6 @@
 │   ├── chatbot_tfidf.py   ← untuk TF-IDF + matching
 
 ```
+
+## Evaluasi 
+1. Jika Pake Anaconda Promt pake buat env di wajibkan buatlah envnya di derecotry dari folder root projectnya biar gak ribet tar.  
