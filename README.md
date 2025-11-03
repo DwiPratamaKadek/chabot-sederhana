@@ -14,9 +14,15 @@
 ## Pengembangan Chatbot Hybrid Berbasis Gabungan TF-IDF dan Semantic Embedding dengan LLM Gemini untuk Pembangkitan Teks
 
 ### Apa itu Retrievel ? 
+### Apa itu Rerangking ? 
 ### Apa itu TF - IDF ? 
+### Apa itu Semantic Embedding ? 
 ### Apa itu Cosine Similarity ?  
+### Apa itu LLM ? 
+### Kenapa menggabungkan TF-IDF dengan Semantic Embedding ? 
+### Kenapa menggunakan LLM sebagai generate textnya ? 
 
+***belum tak jawab bang masih malas***
 
 ### Tahapan Pembuatan Chatbot Sederhana.
 
