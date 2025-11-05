@@ -34,7 +34,6 @@ Jadi gampangnya TF-IDF itu ngebantu komputer mengetahui seberapa sering kata itu
  ```bash 
     IDF = log(total dokumen / dokumen yang mengandung kata itu)
  ```
- ***ahahahaha***
  4. Kemudian akan di gabungkan TF x IDF 
  5. Kemudian hasil dari perhitungan TF-IDF akan diubah menjadi vektor berdasarkan nilai dari TF-IDFnya, jadinya komputer mudah mengukur kemiripan dari setiap kata(tool yang bisanya buat ngebandingin make ***cosine similarity***)
  6. Kata yang sering muncul di dokumen tertentu tapi jarang di dokumen lain → skor tinggi (penting),
