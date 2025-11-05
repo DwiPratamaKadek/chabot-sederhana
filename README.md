@@ -13,9 +13,35 @@
 # Penjelasan tentang project 
 ## Pengembangan Chatbot Hybrid Berbasis Gabungan TF-IDF dan Semantic Embedding dengan LLM Gemini untuk Pembangkitan Teks
 
-### Apa itu Retrievel ? 
-### Apa itu Rerangking ? 
+### Apa itu Retrieval ? 
+Retrival itu mengambil dan mencari potongan kata dari suatu paragraf,kalimat, dll. 
+Gampangnya Retrival itu mencari kalimat yang benar benar cocok atau sama dari apa yang kita cari, contohnya : "apa itu TF-IDF" Retrival akan mencocokan dan membandingkan makna atau isi dari kata, kemudian akan di tampilkan yang mana kata mirip.
+
+### Apa itu Reranking ? 
+Reranking maknanya itu mencari berdasarkan maknanya, dimana Reranking mengurutkan ulang kembali dari hasil Retrieval. 
+Gampangnya Reranking ini mengurutkan kembali lagi apa sudah dicari oleh Retrieval dan Reranking ini akan memeriksa ulang satu persatu, mencocokan lagi berdasarkan makna,mengurutkan kembali lagi mana yang lebih relevan dari pertanyaan. 
+
 ### Apa itu TF - IDF ? 
+TF-IDF itu adalah alat yang digunakan buat melakukan Retrieval.
+TF-IDF (Term Frequency Inverse Document Frequency) yang dimana tool membantu komputer untuk mengerti kata mana yang penting.
+Jadi gampangnya TF-IDF itu ngebantu komputer mengetahui seberapa sering kata itu muncul dan seberapa jarang ada kata itu di kalimat lain. 
+
+### Nah gimana cara kerja TF-IDF ? 
+ 1. TF-IDF akan memecahkan kalimat menjadi kata "aku tadi makan siang, tapi lupa sarapan" ["aku", "tadi", "makan", "siang", "tapi", "lupa", "sarapan"]
+ 2. Kemudian akan menghitung TFnya dimana TF akan menghitung dan mencari kata yang paling sering muncul(yang penting) kata "makan" = 1 kata itu muncul 2 x pada kalimat, jadi TF = 1/2 = 0,5. yaa 
+ 3. Kemudian akan menghitung juga yang jarang muncul(yang tidak penting) 
+ ini rumusnya 
+ ```bash 
+    IDF = log(total dokumen / dokumen yang mengandung kata itu)
+ ```
+ ***ahahahaha***
+ 4. Kemudian akan di gabungkan TF x IDF 
+ 5. Kemudian hasil dari perhitungan TF-IDF akan diubah menjadi vektor berdasarkan nilai dari TF-IDFnya, jadinya komputer mudah mengukur kemiripan dari setiap kata(tool yang bisanya buat ngebandingin make ***cosine similarity***)
+ 6. Kata yang sering muncul di dokumen tertentu tapi jarang di dokumen lain → skor tinggi (penting),
+Kata yang muncul di semua dokumen → skor rendah (nggak penting)
+**Yaa kurang lebih kek gitu**
+
+
 ### Apa itu Semantic Embedding ? 
 ### Apa itu Cosine Similarity ?  
 ### Apa itu LLM ? 
